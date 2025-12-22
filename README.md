@@ -1,38 +1,61 @@
-SOAProject/
-│
-├─ tp333/              # Backend Java (Tomcat / JAX-RS)
-│   ├─ src/            # Code source Java
-│   ├─ WebContent/     # Fichiers web pour déploiement
-│   └─ ...
-│
-├─ react/              # Frontend React
-│   ├─ src/            # Code source React
-│   ├─ public/         # Fichiers publics
-│   └─ package.json
-│
-└─ README.md           # Ce fichier
+# 📦 SOA Project - Gestion Utilisateurs
 
-## Fonctionnalités
-- Ajouter un utilisateur (nom + âge)
-- Modifier un utilisateur
-- Supprimer un utilisateur
-- Afficher la liste des utilisateurs
-- Interface responsive et moderne avec animations
+Un projet SOA complet avec backend Java (Tomcat/JAX-RS) et frontend React pour la gestion des utilisateurs.
 
-##  Installation et lancement
+## ✨ Fonctionnalités
 
-### 1️⃣ Lancer le backend (TP333)
+### 👥 Gestion des Utilisateurs
+- ✅ **Ajouter un utilisateur** (nom + âge)
+- ✅ **Modifier un utilisateur** existant
+- ✅ **Supprimer un utilisateur**
+- ✅ **Afficher la liste** des utilisateurs
+- ✅ **Recherche et filtrage** des utilisateurs
 
-1. Ouvrir **Eclipse** et charger le projet `tp333`.
-2. Vérifier le serveur **Tomcat** dans l’onglet **Servers**.
-3. Si le serveur est **STOPPED**, clic droit → **Start**.
-4. Ajouter le projet `tp333` au serveur si ce n’est pas déjà fait :  
-   `Right click on Tomcat > Add and Remove… > Add TP333 > Finish`.
-5. Vérifier que le backend est accessible :  
+### 🎨 Interface
+- ✅ **Design responsive** (mobile, tablette, desktop)
+- ✅ **Animations modernes** et transitions fluides
+- ✅ **UI/UX intuitive** et conviviale
+- ✅ **Validation en temps réel** des formulaires
 
 
-### Frontend (React)
-1. Aller dans le dossier `react-app`.
-2. Installer les dépendances :
+#### 1️⃣ **Cloner le projet**
 ```bash
+git clone [votre-repo-url]
+cd SOAProject
+
+#### 2️⃣ **Lancer le Backend (TP333)**
+# Méthode 1 : Avec Eclipse
+1. Ouvrir Eclipse
+2. File > Import > Existing Projects into Workspace
+3. Sélectionner le dossier "tp333"
+4. Clic droit sur tp333 > Run As > Run on Server
+5. Choisir Tomcat et démarrer
+
+# Méthode 2 : Avec Maven en ligne de commande
+cd tp333
+mvn clean install
+mvn tomcat7:deploy  # ou déployer manuellement le fichier .war dans Tomcat
+
+# Vérifier que le backend fonctionne
+curl http://localhost:8080/tp333/api/users
+# Doit retourner : {"message": "Backend SOA démarré avec succès!"}
+
+####3️⃣ _Lancer le Frontend (React)_
+# Aller dans le dossier React
+cd react
+
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
+npm start
+
+# OU avec la commande spécifique
 npm run dev
+
+####4️⃣ Accéder à l'application
+Backend API : http://localhost:8080/tp333/
+
+Frontend : http://localhost:3000
+
+Interface utilisateur : http://localhost:3000 (avec connexion automatique au backend)
