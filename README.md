@@ -19,7 +19,7 @@ Un projet SOA complet avec backend Java (Tomcat/JAX-RS) et frontend React pour l
 
 
 #### 1️⃣ **Cloner le projet**
-```bash
+bash
 git clone [votre-repo-url]
 cd SOAProject
 
