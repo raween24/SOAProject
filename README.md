@@ -1,4 +1,4 @@
-# 📦 SOA Project - Gestion Utilisateurs
+# SOA Project - Gestion Utilisateurs
 
 Un projet SOA complet avec backend Java (Tomcat/JAX-RS) et frontend React pour la gestion des utilisateurs.
 
