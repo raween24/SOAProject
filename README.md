@@ -51,9 +51,6 @@ cd react
 npm install
 
 # Lancer le serveur de développement
-npm start
-
-# OU avec la commande spécifique
 npm run dev
 
 ### 4️⃣Accéder à l'application
