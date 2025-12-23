@@ -1,4 +1,4 @@
-# SOA Project - Gestion Utilisateurs
+##### SOA Project - Gestion Utilisateurs
 
 Un projet SOA complet avec backend Java (Tomcat/JAX-RS) et frontend React pour la gestion des utilisateurs.
 
@@ -6,15 +6,15 @@ Un projet SOA complet avec backend Java (Tomcat/JAX-RS) et frontend React pour l
 Google Drive:
 https://drive.google.com/file/d/1dZ1SOeo5qEGNJ5dbCHrSu36Mv7RX0PeD/view?usp=sharing
 
-###### Fonctionnalités #####
-### Gestion des Utilisateurs
+### Fonctionnalités ###
+## Gestion des Utilisateurs
 - **Ajouter un utilisateur** (nom + âge)
 - **Modifier un utilisateur** existant
 - **Supprimer un utilisateur**
 - **Afficher la liste** des utilisateurs
 - **Recherche et filtrage** des utilisateurs
 
-#### Interface ####
+### Interface ###
 - **Design responsive** (mobile, tablette, desktop)
 - **Animations modernes** et transitions fluides
 - **UI/UX intuitive** et conviviale
@@ -43,7 +43,7 @@ mvn tomcat7:deploy  # ou déployer manuellement le fichier .war dans Tomcat
 curl http://localhost:8080/tp333/api/users
 # Doit retourner : {"message": "Backend SOA démarré avec succès!"}
 
-#### 3️⃣Lancer le Frontend (React)
+### 3️⃣Lancer le Frontend (React)
 # Aller dans le dossier React
 cd react
 
@@ -56,7 +56,7 @@ npm start
 # OU avec la commande spécifique
 npm run dev
 
-#### 4️⃣Accéder à l'application
+### 4️⃣Accéder à l'application
 Backend API : http://localhost:8080/tp333/
 
 Frontend : http://localhost:3000
